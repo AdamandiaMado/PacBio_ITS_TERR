@@ -1,2 +1,5 @@
 # 1st step: QC using SeqKit v2.6.1
 /data/projects/p605_PerchPilot/PacBio/Colin/ITS/raw/
+
+# 2nd step: Build summary table: Aggregate SeqKit stats outputs (2 lines per file) into one table: seqkit_summary.tsv
+/data/projects/p605_PerchPilot/PacBio/Colin/ITS/raw/filtered/02_summarise.sh
