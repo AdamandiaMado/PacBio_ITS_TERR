@@ -12,3 +12,6 @@ zcat /data/projects/p605_PerchPilot/PacBio/Colin/ITS/raw/P1_*.fastq.gz | grep -c
 
 # 5th step: Downsample to 20000 reads max
 /data/projects/p605_PerchPilot/PacBio/Colin/ITS/raw/filteredRobust/05_downsample.sh
+
+# 6th step: dada2: Learn error model (PacBio-specific) --> Dereplication --> Denoising --> Fix mixed orientation (critical for PacBio without primers) --> Chimera removal --> Read tracking & resume if it's timed out
+/data/projects/p605_PerchPilot/PacBio/Colin/ITS/raw/filteredRobust/downsampled/06_dada2.sh
