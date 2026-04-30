@@ -3,3 +3,9 @@
 
 # 2nd step: Build summary table: Aggregate SeqKit stats outputs (2 lines per file) into one table: seqkit_summary.tsv
 /data/projects/p605_PerchPilot/PacBio/Colin/ITS/raw/filtered/02_summarise.sh
+
+# 3rd step: Check if primers exist or are already trimmed: Here they were trimmed already!
+zcat /data/projects/p605_PerchPilot/PacBio/Colin/ITS/raw/P1_*.fastq.gz | grep -c "CTTGGTCATTTAGAGGAAGTAA" # 246: Only 246 out of 81,960 reads contain the exact forward primer — that's 0.3%. This is completely normal and expected for PacBio HiFi: Reads are already demultiplexed and primer-trimmed by the sequencing platform.
+
+# 4th step: Filtering: min/max length filter (200, 2000) & remove Ns
+/data/projects/p605_PerchPilot/PacBio/Colin/ITS/raw/04_filteredRobust.sh
