@@ -13,5 +13,8 @@ zcat /data/projects/p605_PerchPilot/PacBio/Colin/ITS/raw/P1_*.fastq.gz | grep -c
 # 5th step: Downsample to 20000 reads max
 /data/projects/p605_PerchPilot/PacBio/Colin/ITS/raw/filteredRobust/05_downsample.sh
 
-# 6th step: dada2: Learn error model (PacBio-specific) --> Dereplication --> Denoising --> Fix mixed orientation (critical for PacBio without primers) --> Chimera removal --> Read tracking & resume if it's timed out
+# 6th step: dada2: Learn error model (PacBio-specific) --> Dereplication --> Denoising --> Fix mixed orientation (critical for PacBio without primers) --> Chimera removal --> Read tracking & resume if it's timed out (first run dada2_ITS_pacbio.R)
 /data/projects/p605_PerchPilot/PacBio/Colin/ITS/raw/filteredRobust/downsampled/06_dada2.sh
+
+# 7th step: Taxonomy: Filter by sequence length (100-1000bp) --> Assign taxonomy with UNITE (sh_general_release_dynamic_19.02.2025.fasta) --> Remove low abundance ASVs (total reads <= 10) --> Prevalence filter — present in >2 samples --> Remove samples with zero reads after filtering
+/data/projects/p605_PerchPilot/PacBio/Colin/ITS/raw/filteredRobust/downsampled/07_taxonomy.sh
