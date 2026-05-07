@@ -1,0 +1,7 @@
+sample_id,plate,barcode,tube_number,label,plot,row,column,year,harvest,season,week,collection_date,drought,temperature,heat_waves,treatment,sample_type
+P1_m84151_260121_185629_s4.hifi_reads.bc1005--bc1033.hifi_reads.downsampled,P1,bc1005--bc1033,1,A1_12.06.25_soilDNA,A1,A,1,2025,H1,spring,21,19.05.2025,C,MH,Abs,Ambient + 2C,Sample
+P1_m84151_260121_185629_s4.hifi_reads.bc1005--bc1035.hifi_reads.downsampled,P1,bc1005--bc1035,9,B1_12.06.25_soilDNA,B1,B,1,2025,H1,spring,21,19.05.2025,C,A,Abs,Ambient,Sample
+P1_m84151_260121_185629_s4.hifi_reads.bc1005--bc1044.hifi_reads.downsampled,P1,bc1005--bc1044,17,C1_12.06.25_soilDNA,C1,C,1,2025,H1,spring,21,19.05.2025,D,A,HW,Ambient + Periodic Heat Wave,Sample
+P1_m84151_260121_185629_s4.hifi_reads.bc1005--bc1045.hifi_reads.downsampled,P1,bc1005--bc1045,25,D1_12.06.25_soilDNA,D1,D,1,2025,H1,spring,21,19.05.2025,D,A,Abs,Ambient,Sample
+P1_m84151_260121_185629_s4.hifi_reads.bc1005--bc1054.hifi_reads.downsampled,P1,bc1005--bc1054,33,E1_12.06.25_soilDNA,E1,E,1,2025,H1,spring,21,19.05.2025,D,MH,HW,Ambient + 2C + Periodic Heat Wave,Sample
+P1_m84151_260121_185629_s4.hifi_reads.bc1005--bc1056.hifi_reads.downsampled,P1,bc1005--bc1056,41,NAT1_12.06.25_soilDNA,NAT1,NA,NA,2025,H1,spring,21,19.05.2025,NA,NA,NA,NA,Sample_NAT
