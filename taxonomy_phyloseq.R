@@ -11,7 +11,7 @@ cat("Threads:", n_threads, "\n")
 outdir        <- "/data/projects/p605_PerchPilot/PacBio/Roxanne/ITS/raw/filteredRobust/downsampled/dada2"
 seqtab_file   <- file.path(outdir, "seqtab_nochim.rds")
 unite_db      <- "/data/projects/p605_PerchPilot/PacBio/Colin/ITS/raw/filteredRobust/downsampled/databases/sh_general_release_dynamic_19.02.2025.fasta"
-metadata_file <- "/data/projects/p605_PerchPilot/PacBio/Roxanne/ITS/metadata.csv"
+metadata_file <- "/data/projects/p605_PerchPilot/PacBio/Roxanne/ITS/raw/filteredRobust/downsampled/metadata.csv"
 
 dir.create(outdir, showWarnings = FALSE, recursive = TRUE)
 
