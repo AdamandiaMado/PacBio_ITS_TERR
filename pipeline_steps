@@ -17,4 +17,4 @@ zcat /data/projects/p605_PerchPilot/PacBio/Colin/ITS/raw/P1_*.fastq.gz | grep -c
 /data/projects/p605_PerchPilot/PacBio/Colin/ITS/raw/filteredRobust/downsampled/06_dada2.sh
 
 # 7th step: Taxonomy: Filter by sequence length (100-1000bp) --> Assign taxonomy with UNITE (sh_general_release_dynamic_19.02.2025.fasta) --> Remove low abundance ASVs (total reads <= 10) --> Prevalence filter — present in >2 samples --> Remove samples with zero reads after filtering
-/data/projects/p605_PerchPilot/PacBio/Colin/ITS/raw/filteredRobust/downsampled/07_taxonomy.sh
+/data/projects/p605_PerchPilot/PacBio/Roxanne/ITS/raw/filteredRobust/downsampled/07_taxonomy.sh
